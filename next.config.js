@@ -8,11 +8,12 @@ module.exports = {
     prependData: `@use "src/styles/utils.scss" as *;`,
   },
   webpack: (config) => {
-    config.resolve.alias['@app'] = path.resolve(__dirname, 'src/app');
-    config.resolve.alias['@styles'] = path.resolve(__dirname, 'src/styles');
-    config.resolve.alias['@libs'] = path.resolve(__dirname, 'src/libs');
-    return config;
-  },
+  config.resolve.alias['@app'] = path.resolve(__dirname, 'src/app');
+  config.resolve.alias['@styles'] = path.resolve(__dirname, 'src/styles');
+  config.resolve.alias['@libs'] = path.resolve(__dirname, 'src/libs');
+  config.resolve.alias['@services'] = path.resolve(__dirname, 'src/services');
+  return config;
+},
   images: {
     remotePatterns: [
       {
