@@ -1,7 +1,8 @@
 import { META_ROOT } from '@app/_meta'
 import '@styles/css/vars.css'
 import '@styles/base.scss'
-import NexonLv1Gothic from 'public/fonts/localfonts'
+// import NexonLv1Gothic from 'public/fonts/localfonts'
+import NexonLv1Gothic from '../../public/fonts/localfonts'
 import GlobalNavigationBar from '@libs/shared/navigation/GlobalNavigationBar'
 
 const RootLayout = ({
